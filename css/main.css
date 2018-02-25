@@ -40,7 +40,6 @@ a {
 
 .header-divider {
   color: #7d97ad;
-  min-width: 100%;
   margin-top: 10px;
   border: solid 1.5px;
 }
@@ -56,17 +55,18 @@ a {
 
 .projects-header {
   color: #2d3c49;
+  margin-left: 10px;
 }
 
 /* Portfolio */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: 10px;
 }
 
 .portfolio-item {
-    flex: 50%;
+    flex-basis: 50%;
     max-width: 50%;
     margin-bottom: 10px;
 }
@@ -83,4 +83,76 @@ a {
   text-transform: uppercase;
   max-width: 90%;
   margin-bottom: 0px;
+}
+
+/* Responsive CSS */
+/* Tablet (iPad) */
+@media screen and (min-width: 610px) {
+  a {
+    font-size: 20px;
+  }
+
+  .logo {
+  	max-width: 140px;
+  }
+
+  .header-text {
+  	font-size: 30px;
+  }
+
+  .header-name {
+    margin-bottom: -30px;
+  }
+
+  .projects-header {
+    font-size: 30px;
+  }
+
+  .project-img {
+    min-width: 90%;
+    height: 300px;
+  }
+
+  .project-name {
+    font-size: 20px;
+    min-width: 80%;
+  }
+}
+
+/* Desktop XS*/
+@media screen and (min-width: 810px) {
+  .logo {
+  	margin-top: 20px;
+  }
+
+  .header-text {
+  	margin-top: 20px;
+  }
+
+  .portfolio-item {
+      flex-wrap: nowrap;
+      flex-basis: 33%;
+      margin-bottom: 10px;
+  }
+}
+
+/* Desktop L*/
+@media screen and (min-width: 950px) {
+  .header-divider {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-img {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
