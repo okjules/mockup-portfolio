@@ -1,0 +1,86 @@
+/* General CSS */
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+a {
+  color: #02b3e4;
+  font-size: 12px;
+}
+
+/* Header */
+.main-header {
+  color: #2d3c49;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.header-logo {
+	margin-left: -20px;
+  margin-top: 15px;
+}
+
+.logo {
+	max-width: 70px;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+
+.header-text {
+  margin: 15px -20px -20px 0;
+	max-width: 100%;
+  text-align: right;
+}
+
+.header-name {
+  margin-bottom: -20px;
+}
+
+.header-divider {
+  color: #7d97ad;
+  min-width: 100%;
+  margin-top: 10px;
+  border: solid 1.5px;
+}
+
+/* Main Content */
+.main-img {
+  margin-top: 10px;
+}
+
+.content-img {
+  max-width: 100%;
+}
+
+.projects-header {
+  color: #2d3c49;
+}
+
+/* Portfolio */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.project-img {
+  max-width: 90%;
+  height: 150px;
+}
+
+.project-name {
+  color: #2d3c49;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  max-width: 90%;
+  margin-bottom: 0px;
+}
